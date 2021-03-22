@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="TestPackage.E2EFramework.TestListeners"/>
+<listener class-name="Resources.ExtentReporterNG"/>
+
+</listeners>
+
+<test name = 'Validate Info of the site'>
+    <classes>
+    <class name="TestPackage.E2EFramework.ValidateInfo"/>
+    </classes>
+</test>
+
+      
+<test name = 'Validate Rule of the booking'> 
+
+    <classes>
+    <class name="TestPackage.E2EFramework.ValidateRules"/>
+    </classes>
+</test>
+
+    
+<test name = 'Validate user should select the time slot'>
+
+    <classes>
+     <class name="TestPackage.E2EFramework.ValidateTimeSelect"/>
+     </classes>
+</test>
+    
+<test name = 'Validate booking cancle'>
+	
+	<classes>    
+    <class name="TestPackage.E2EFramework.ValidateCancleBooking"/>
+    </classes>  
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
